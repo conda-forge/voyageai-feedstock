@@ -1,0 +1,21 @@
+From 2c630706f15fa213ee9d6c82f6d3739b0f43c88a Mon Sep 17 00:00:00 2001
+From: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date: Sat, 2 Nov 2024 09:36:48 +0100
+Subject: [PATCH] Update pyproject.toml
+
+---
+ pyproject.toml | 1 -
+ 1 file changed, 1 deletions(-)
+
+diff --git a/pyproject.toml b/pyproject.toml
+index 29eafd4..054a191 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -10,7 +10,6 @@ python = "^3.9,<3.13"
+ requests = "*"
+ aiohttp = "*"
+ tenacity = "*"
+-oldest-supported-numpy = "*"
+ aiolimiter = "*"
+ pillow = "*"
+ pydantic = ">=1.10.8"
