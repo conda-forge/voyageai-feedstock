@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/voyageai-{{ version }}.tar.gz
   sha256: 081d4c2e788e08c91cb33a5646e45cdb710766594d9ec4c1fb84c1e458b586b3
+  patches:
+    - pyproject.patch
 
 build:
   noarch: python
