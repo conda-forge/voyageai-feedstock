@@ -1,5 +1,5 @@
 {% set name = "voyageai" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,9 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/voyageai-{{ version }}.tar.gz
-  sha256: 081d4c2e788e08c91cb33a5646e45cdb710766594d9ec4c1fb84c1e458b586b3
-  patches:
-    - pyproject.patch
+  sha256: 93c6bd519e26ecb41ba5ebd020788fbc0d78df2f923138faa03543fe711b0ee5
 
 build:
   noarch: python
@@ -29,7 +27,7 @@ requirements:
     - requests
     - aiohttp
     - tenacity
-    - numpy >=1.11
+    - numpy
     - aiolimiter
 
 test:
