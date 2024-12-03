@@ -1,5 +1,5 @@
 {% set name = "voyageai" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/voyageai-{{ version }}.tar.gz
-  sha256: 93c6bd519e26ecb41ba5ebd020788fbc0d78df2f923138faa03543fe711b0ee5
+  sha256: bd1b52d26179d91853cbd2a0e52dc95cb0d526760c6c830959e01eb5ff9eaa12
 
 build:
   noarch: python
