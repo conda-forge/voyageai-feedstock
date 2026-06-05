@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: voyageai
-  version: "0.3.7"
+  version: 0.4.0
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/voyageai-${{ version }}.tar.gz
-  sha256: 826cd97f97223f42b5babc5c459c9c80f3a8215ce5c0e007b0b276550f790d24
+  sha256: 1a4b3b0750eb5bf8a8fa978d834a1aa720e1a0157710cd603856c19562c6e5f7
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -26,7 +26,7 @@ requirements:
     - ffmpeg-python
     - langchain-text-splitters >=0.3.8
     - pillow
-    - pydantic >=1.10.8
+    - pydantic >=2.7.4
     - tokenizers >=0.14.0
     - python >=${{ python_min }},<3.13
     - requests
@@ -34,7 +34,6 @@ requirements:
     - tenacity
     - numpy
     - aiolimiter
-
 tests:
   - python:
       imports:
