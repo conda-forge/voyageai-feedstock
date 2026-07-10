@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: voyageai
-  version: "0.4.1"
+  version: 0.5.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/voyageai-${{ version }}.tar.gz
-  sha256: 1e59d9fb22f79abdeef6946000fb4789ac10d9453b9997574f8408e619999b4c
+  sha256: ed2775fe9faeb96cc2b3931edc35d76185d19f34f1523d1f70535f0451126ae9
 
 build:
   number: 0
@@ -23,7 +23,6 @@ requirements:
     - poetry-core
     - pip
   run:
-    - ffmpeg-python
     - langchain-text-splitters >=0.3.8
     - pillow
     - pydantic >=2.7.4
