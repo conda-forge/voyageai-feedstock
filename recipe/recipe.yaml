@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: voyageai
-  version: 0.5.0
+  version: "0.6.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/voyageai-${{ version }}.tar.gz
-  sha256: ed2775fe9faeb96cc2b3931edc35d76185d19f34f1523d1f70535f0451126ae9
+  sha256: 9327de6130f8f755211470a4d135186461796c3c316488199c7485eea9213b69
 
 build:
   number: 0
